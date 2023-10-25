@@ -35,3 +35,21 @@ def error_table_api_view(request):
     
     # Return the HTML response
     return Response({'html': html.strip()})
+
+from django.views.decorators.csrf import csrf_exempt
+@csrf_exempt
+@api_view(['GET'])
+def error_table_api_json(request):
+    # Get the input from the text box
+    input_text = request.query_params.get('input_text')
+    print(input_text)
+    # Extract the error codes from the input text
+    pattern = r'CVE-\d{4}-\d{4,7}'
+    error_codes = re.findall(pattern, input_text)
+    # Get the error tables for the error codes using a ThreadPoolExecutor
+    def get_error_table_wrapper(error_code):
+        r, created = RedHatError.objects.get(error_code=error_code)
+        return r.get_error_table()
+    with ThreadPoolExecutor() as executor:
+        error_tables = list(executor.map(get_error_table_wrapper, error_codes))
+    return Response({'data': error_tables})
