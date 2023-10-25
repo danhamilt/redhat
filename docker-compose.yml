@@ -13,7 +13,7 @@ services:
       - DATABASE_URL=postgres://efit:Tech2023db@34.67.50.41/redhat
       - DJANGO_ENVIRONMENT=production
       - GOOGLE_APPLICATION_CREDENTIALS=/redhat/api/api/credentials/credentials.json
-      - PYTHONPATH=/efit-institite-api/api/api/:/redhat/api/:/redhat/
+      - PYTHONPATH=/redhat/api/api/:/redhat/api/:/redhat/
     volumes:
       - .:/redhat/
     command: uwsgi --http :8080 --module api.wsgi
