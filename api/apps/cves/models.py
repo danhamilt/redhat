@@ -55,12 +55,19 @@ class RedHatDownloader(Downloader):
     
 class RedHatError(models.Model):
     error_code = models.CharField(max_length=1000, unique=True)
+    error_json = models.JSONField(null=True, blank=True)
     downloader = RedHatDownloader()
     def __str__(self):
-        return self.error
+        return self.error_code
     
     def get_error_table(self):
-        error_json =  self.downloader.get_table(self.error_code)
+        try:
+            error_json =  self.downloader.get_table(self.error_code)
+        except requests.exceptions.HTTPError:
+            error_json = self.error_json or {}
+        else:
+            self.error_json = error_json
+            self.save(update_fields=['error_json'])
         return_dict = {}
         try:
             for v in error_json['field_cve_releases_txt']['und'][0]['object']:

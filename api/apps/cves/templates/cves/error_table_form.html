@@ -41,7 +41,7 @@
         const formData = new FormData(form);
         console.log(formData)
         // Make an AJAX request to the backend view
-        fetch('/cves/api/error-table/', {
+        fetch('/api/error-table/', {
             method: 'POST',
             body: formData
         })
@@ -53,6 +53,9 @@
 
             errorTableContainer.innerHTML = html.html;
         })
-        .catch(error => console.error(error));
+        .catch(error => {
+            console.error(error);
+            errorTableContainer.innerHTML = error;
+        });
     });
 </script>
