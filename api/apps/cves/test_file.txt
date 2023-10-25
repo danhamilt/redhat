@@ -1,0 +1,17 @@
+CVE-2014-6272 - Libevent - Multiple Integer Overflow Issues
+CVE-2015-2059 - libidn - Out-of-Bounds Read Issue
+CVE-2019-11477 - Linux - Kernel - Integer Overflow Issue
+CVE-2019-11478 - Linux - Kernel - Denial of Service Issue
+CVE-2019-11479 - Linux - Kernel - Denial of Service Issue
+CVE-2020-15778 - OpenBSD - OpenSSH - OS Command Injection
+CVE-2021-41617 - OpenBSD - OpenSSH - Privilege Escalation
+CVE-2022-23990 - libexpat - Integer Overflow
+CVE-2022-2526 - Systemd Project - Systemd
+CVE-2022-31676 - VMware Tools - Privilege Escalation
+CVE-2022-3564 - Linux - Kernel - Use-After-Free
+CVE-2022-40674 - libexpat - Use-After-Free
+CVE-2022-41974 - OpenSVC - Multipath-Tools - Link Following
+CVE-2022-4254 - Fedoraproject - Sssd
+CVE-2023-35788 - Linux - Kernel - Out-of-Bounds Write
+CVE-2023-38408 - OpenSSH - Remote Code Execution
+CVE-2023-3899 - Redhat - Subscription-Manager

@@ -1,0 +1,671 @@
+{
+  "vid": "23125402",
+  "uid": "11880703",
+  "title": "CVE-2022-31676",
+  "log": "",
+  "status": "1",
+  "comment": "2",
+  "promote": "0",
+  "sticky": "0",
+  "nid": "6973034",
+  "type": "cve",
+  "language": "en",
+  "created": "1661330433",
+  "changed": "1697869186",
+  "tnid": "0",
+  "translate": "0",
+  "revision_timestamp": "1697869186",
+  "revision_uid": "65640566",
+  "field_cve_acknowledgement_text": [],
+  "field_cve_bugzilla_id_int": {
+    "und": [
+      {
+        "value": "2118714"
+      }
+    ]
+  },
+  "field_cve_bugzilla_text": {
+    "und": [
+      {
+        "value": "local root privilege escalation in the virtual machine",
+        "format": null,
+        "safe_value": "local root privilege escalation in the virtual machine"
+      }
+    ]
+  },
+  "field_cve_cvss_base_score": [],
+  "field_cve_cvss_scoring_vector": [],
+  "field_cve_cvss_status_text": {
+    "und": [
+      {
+        "value": "draft"
+      }
+    ]
+  },
+  "field_cve_details_source_text": {
+    "und": [
+      {
+        "value": "Red Hat"
+      }
+    ]
+  },
+  "field_cve_details_text": {
+    "und": [
+      {
+        "value": "A flaw was found in open-vm-tools. A malicious actor with local non-administrative access to the guest operating system can escalate privileges as a root user in the virtual machine.",
+        "format": null,
+        "safe_value": "A flaw was found in open-vm-tools. A malicious actor with local non-administrative access to the guest operating system can escalate privileges as a root user in the virtual machine."
+      }
+    ]
+  },
+  "field_cve_iava_text": [],
+  "field_cve_public_date": {
+    "und": [
+      {
+        "value": "2022-08-23T00:00:00+00:00",
+        "timezone": "UTC",
+        "timezone_db": "UTC",
+        "date_type": "datetime"
+      }
+    ]
+  },
+  "field_cve_references_text": {
+    "und": [
+      {
+        "value": "https://www.cve.org/CVERecord?id=CVE-2022-31676\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-31676\nhttps://www.openwall.com/lists/oss-security/2022/08/23/3",
+        "format": "markdown",
+        "safe_value": "<p>https://www.cve.org/CVERecord?id=CVE-2022-31676<br />\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-31676<br />\nhttps://www.openwall.com/lists/oss-security/2022/08/23/3</p>\n"
+      }
+    ]
+  },
+  "field_cve_statement_text": [],
+  "field_cve_threat_severity_text": {
+    "und": [
+      {
+        "value": "Important"
+      }
+    ]
+  },
+  "field_cve_mitigation_text": {
+    "und": [
+      {
+        "value": "<p>Mitigation for this issue is either not available or the currently available options don&#x27;t meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.<br /></p>",
+        "format": "markdown",
+        "safe_value": "<p>Mitigation for this issue is either not available or the currently available options don&#x27;t meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.</p>\n"
+      }
+    ]
+  },
+  "field_cve_security_errata_text": [],
+  "field_cve_cwe_text": {
+    "und": [
+      {
+        "value": "CWE-250: Execution with Unnecessary Privileges",
+        "format": null,
+        "safe_value": "CWE-250: Execution with Unnecessary Privileges"
+      }
+    ]
+  },
+  "field_access_state": {
+    "und": [
+      {
+        "value": "active"
+      }
+    ]
+  },
+  "field_affected_state_package_txt": [],
+  "field_cve_cvss3_base_metrics": {
+    "und": [
+      {
+        "value": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "format": null,
+        "safe_value": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+      }
+    ]
+  },
+  "field_cve_cvss3_status": {
+    "und": [
+      {
+        "value": "verified"
+      }
+    ]
+  },
+  "field_cve_cvss3_base_score": {
+    "und": [
+      {
+        "value": "7.0"
+      }
+    ]
+  },
+  "field_cve_cvss3_temporal_score": [],
+  "field_cve_cvss3_temporal_vector": [],
+  "field_cve_exploit_known": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_cve_releases_txt": {
+    "und": [
+      {
+        "value": [
+          {
+            "cpe": "cpe:/o:redhat:enterprise_linux:7",
+            "product": "Red Hat Enterprise Linux 7",
+            "advisory": {
+              "name": "RHSA-2022:6381",
+              "release_date": "2022-09-07T14:35:56+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6381"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": "https://access.redhat.com/support/policy/updates/errata/"
+          },
+          {
+            "cpe": "cpe:/a:redhat:enterprise_linux:8",
+            "product": "Red Hat Enterprise Linux 8",
+            "advisory": {
+              "name": "RHSA-2022:6357",
+              "release_date": "2022-09-06T14:50:47+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6357"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": "https://access.redhat.com/support/policy/updates/errata/"
+          },
+          {
+            "cpe": "cpe:/a:redhat:rhel_e4s:8.1",
+            "product": "Red Hat Enterprise Linux 8.1 Update Services for SAP Solutions",
+            "advisory": {
+              "name": "RHSA-2022:6354",
+              "release_date": "2022-09-06T14:36:13+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6354"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": ""
+          },
+          {
+            "cpe": "cpe:/a:redhat:rhel_eus:8.2",
+            "product": "Red Hat Enterprise Linux 8.2 Extended Update Support",
+            "advisory": {
+              "name": "RHSA-2022:6355",
+              "release_date": "2022-09-06T14:40:52+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6355"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": ""
+          },
+          {
+            "cpe": "cpe:/a:redhat:rhel_eus:8.4",
+            "product": "Red Hat Enterprise Linux 8.4 Extended Update Support",
+            "advisory": {
+              "name": "RHSA-2022:6356",
+              "release_date": "2022-09-06T15:03:15+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6356"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": ""
+          },
+          {
+            "cpe": "cpe:/a:redhat:enterprise_linux:9",
+            "product": "Red Hat Enterprise Linux 9",
+            "advisory": {
+              "name": "RHSA-2022:6358",
+              "release_date": "2022-09-06T14:41:37+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6358"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": "https://access.redhat.com/support/policy/updates/errata/"
+          }
+        ],
+        "format": null,
+        "safe_value": "[{&quot;cpe&quot;: &quot;cpe:/o:redhat:enterprise_linux:7&quot;, &quot;product&quot;: &quot;Red Hat Enterprise Linux 7&quot;, &quot;advisory&quot;: {&quot;name&quot;: &quot;RHSA-2022:6381&quot;, &quot;release_date&quot;: &quot;2022-09-07T14:35:56+00:00&quot;, &quot;type&quot;: &quot;RHSA&quot;, &quot;url&quot;: &quot;https://access.redhat.com/errata/RHSA-2022:6381&quot;}, &quot;package&quot;: &quot;open-vm-tools&quot;, &quot;state&quot;: &quot;Fixed&quot;, &quot;lifecycle_url&quot;: &quot;https://access.redhat.com/support/policy/updates/errata/&quot;}, {&quot;cpe&quot;: &quot;cpe:/a:redhat:enterprise_linux:8&quot;, &quot;product&quot;: &quot;Red Hat Enterprise Linux 8&quot;, &quot;advisory&quot;: {&quot;name&quot;: &quot;RHSA-2022:6357&quot;, &quot;release_date&quot;: &quot;2022-09-06T14:50:47+00:00&quot;, &quot;type&quot;: &quot;RHSA&quot;, &quot;url&quot;: &quot;https://access.redhat.com/errata/RHSA-2022:6357&quot;}, &quot;package&quot;: &quot;open-vm-tools&quot;, &quot;state&quot;: &quot;Fixed&quot;, &quot;lifecycle_url&quot;: &quot;https://access.redhat.com/support/policy/updates/errata/&quot;}, {&quot;cpe&quot;: &quot;cpe:/a:redhat:rhel_e4s:8.1&quot;, &quot;product&quot;: &quot;Red Hat Enterprise Linux 8.1 Update Services for SAP Solutions&quot;, &quot;advisory&quot;: {&quot;name&quot;: &quot;RHSA-2022:6354&quot;, &quot;release_date&quot;: &quot;2022-09-06T14:36:13+00:00&quot;, &quot;type&quot;: &quot;RHSA&quot;, &quot;url&quot;: &quot;https://access.redhat.com/errata/RHSA-2022:6354&quot;}, &quot;package&quot;: &quot;open-vm-tools&quot;, &quot;state&quot;: &quot;Fixed&quot;, &quot;lifecycle_url&quot;: &quot;&quot;}, {&quot;cpe&quot;: &quot;cpe:/a:redhat:rhel_eus:8.2&quot;, &quot;product&quot;: &quot;Red Hat Enterprise Linux 8.2 Extended Update Support&quot;, &quot;advisory&quot;: {&quot;name&quot;: &quot;RHSA-2022:6355&quot;, &quot;release_date&quot;: &quot;2022-09-06T14:40:52+00:00&quot;, &quot;type&quot;: &quot;RHSA&quot;, &quot;url&quot;: &quot;https://access.redhat.com/errata/RHSA-2022:6355&quot;}, &quot;package&quot;: &quot;open-vm-tools&quot;, &quot;state&quot;: &quot;Fixed&quot;, &quot;lifecycle_url&quot;: &quot;&quot;}, {&quot;cpe&quot;: &quot;cpe:/a:redhat:rhel_eus:8.4&quot;, &quot;product&quot;: &quot;Red Hat Enterprise Linux 8.4 Extended Update Support&quot;, &quot;advisory&quot;: {&quot;name&quot;: &quot;RHSA-2022:6356&quot;, &quot;release_date&quot;: &quot;2022-09-06T15:03:15+00:00&quot;, &quot;type&quot;: &quot;RHSA&quot;, &quot;url&quot;: &quot;https://access.redhat.com/errata/RHSA-2022:6356&quot;}, &quot;package&quot;: &quot;open-vm-tools&quot;, &quot;state&quot;: &quot;Fixed&quot;, &quot;lifecycle_url&quot;: &quot;&quot;}, {&quot;cpe&quot;: &quot;cpe:/a:redhat:enterprise_linux:9&quot;, &quot;product&quot;: &quot;Red Hat Enterprise Linux 9&quot;, &quot;advisory&quot;: {&quot;name&quot;: &quot;RHSA-2022:6358&quot;, &quot;release_date&quot;: &quot;2022-09-06T14:41:37+00:00&quot;, &quot;type&quot;: &quot;RHSA&quot;, &quot;url&quot;: &quot;https://access.redhat.com/errata/RHSA-2022:6358&quot;}, &quot;package&quot;: &quot;open-vm-tools&quot;, &quot;state&quot;: &quot;Fixed&quot;, &quot;lifecycle_url&quot;: &quot;https://access.redhat.com/support/policy/updates/errata/&quot;}]",
+        "object": [
+          {
+            "cpe": "cpe:/o:redhat:enterprise_linux:7",
+            "product": "Red Hat Enterprise Linux 7",
+            "advisory": {
+              "name": "RHSA-2022:6381",
+              "release_date": "2022-09-07T14:35:56+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6381"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": "https://access.redhat.com/support/policy/updates/errata/"
+          },
+          {
+            "cpe": "cpe:/a:redhat:enterprise_linux:8",
+            "product": "Red Hat Enterprise Linux 8",
+            "advisory": {
+              "name": "RHSA-2022:6357",
+              "release_date": "2022-09-06T14:50:47+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6357"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": "https://access.redhat.com/support/policy/updates/errata/"
+          },
+          {
+            "cpe": "cpe:/a:redhat:rhel_e4s:8.1",
+            "product": "Red Hat Enterprise Linux 8.1 Update Services for SAP Solutions",
+            "advisory": {
+              "name": "RHSA-2022:6354",
+              "release_date": "2022-09-06T14:36:13+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6354"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": ""
+          },
+          {
+            "cpe": "cpe:/a:redhat:rhel_eus:8.2",
+            "product": "Red Hat Enterprise Linux 8.2 Extended Update Support",
+            "advisory": {
+              "name": "RHSA-2022:6355",
+              "release_date": "2022-09-06T14:40:52+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6355"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": ""
+          },
+          {
+            "cpe": "cpe:/a:redhat:rhel_eus:8.4",
+            "product": "Red Hat Enterprise Linux 8.4 Extended Update Support",
+            "advisory": {
+              "name": "RHSA-2022:6356",
+              "release_date": "2022-09-06T15:03:15+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6356"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": ""
+          },
+          {
+            "cpe": "cpe:/a:redhat:enterprise_linux:9",
+            "product": "Red Hat Enterprise Linux 9",
+            "advisory": {
+              "name": "RHSA-2022:6358",
+              "release_date": "2022-09-06T14:41:37+00:00",
+              "type": "RHSA",
+              "url": "https://access.redhat.com/errata/RHSA-2022:6358"
+            },
+            "package": "open-vm-tools",
+            "state": "Fixed",
+            "lifecycle_url": "https://access.redhat.com/support/policy/updates/errata/"
+          }
+        ]
+      }
+    ]
+  },
+  "field_cve_csaw_bool": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_cve_change_log_txt": [],
+  "field_cve_rh_vector_txt": [],
+  "field_cve_rh_cvss3_vector": [],
+  "field_cve_vulnerability_url": [],
+  "field_cve_lifecycle_url": [],
+  "field_cve_faq_txt": {
+    "und": [
+      {
+        "value": [
+          {
+            "question": "Why is Red Hat's CVSS v3 score or Impact different from other vendors?",
+            "answer": "For open source software shipped by multiple vendors, the CVSS base scores may vary for each vendor's version depending on the version they ship, how they ship it, the platform, and even how the software is compiled. This makes scoring of vulnerabilities difficult for third-party vulnerability databases such as NVD that only provide a single CVSS base score for each vulnerability. Red Hat scores reflect how a vulnerability affects our products specifically.<br><br>For more information, see <a href=\"https://access.redhat.com/solutions/762393\">https://access.redhat.com/solutions/762393</a>."
+          },
+          {
+            "question": "My product is listed as \"Under investigation\" or \"Affected\", when will Red Hat release a fix for this vulnerability?",
+            "answer": "<ul><li>\"Under investigation\" doesn't necessarily mean that the product is affected by this vulnerability. It only means that our Analysis Team is still working on determining whether the product is affected and how it is affected.</li><li>\"Affected\" means that our Analysis Team has determined that this product is affected by this vulnerability and might release a fix to address this in the near future.</li></ul>"
+          },
+          {
+            "question": "What can I do if my product is listed as \"Will not fix\"?",
+            "answer": "This depends mostly on the <a href=\"https://access.redhat.com/security/updates/classification/\">Impact</a> of the vulnerability and the <a href=\"https://access.redhat.com/product-life-cycles/update_policies\">Life Cycle</a> phase in which your product is currently in. Overall, you have the following options:<ul><li>Upgrade to a supported product version that includes a fix for this vulnerability (recommended)</li><li>Apply a mitigation (if one exists)</li><li>Open a <a href=\"https://access.redhat.com/support/cases/#/new\">support case</a> to request a prioritization of releasing a fix for this vulnerability</li></ul>"
+          },
+          {
+            "question": "I have a Red Hat product but it is not in the above list, is it affected?",
+            "answer": "The listed products were found to include one or more of the components that this vulnerability affects. These products underwent a thorough evaluation to determine their affectedness by this vulnerability. Note that layered products (such as container-based offerings) that consume affected components from any of the products listed in this table may be affected and are not represented."
+          },
+          {
+            "question": "Why is my security scanner reporting my product as vulnerable to this vulnerability even though my product version is fixed or not affected?",
+            "answer": "In order to maintain code stability and compatibility, Red Hat usually does not rebase packages to entirely new versions. Instead, we <a href=\"https://access.redhat.com/security/updates/backporting\">backport</a> fixes and new features to an older version of the package we distribute. This can result in some security scanners that only consider the package version to report the package as vulnerable. To avoid this, we suggest that you use an OVAL-compatible security scanner like OpenSCAP.<br><br>For more information, see <a href=\"https://www.redhat.com/en/blog/determining-your-risk\">https://www.redhat.com/en/blog/determining-your-risk</a>."
+          }
+        ],
+        "format": null,
+        "safe_value": "[{&quot;question&quot;: &quot;Why is Red Hat&#039;s CVSS v3 score or Impact different from other vendors?&quot;, &quot;answer&quot;: &quot;For open source software shipped by multiple vendors, the CVSS base scores may vary for each vendor&#039;s version depending on the version they ship, how they ship it, the platform, and even how the software is compiled. This makes scoring of vulnerabilities difficult for third-party vulnerability databases such as NVD that only provide a single CVSS base score for each vulnerability. Red Hat scores reflect how a vulnerability affects our products specifically.&lt;br&gt;&lt;br&gt;For more information, see &lt;a href=\\&quot;https://access.redhat.com/solutions/762393\\&quot;&gt;https://access.redhat.com/solutions/762393&lt;/a&gt;.&quot;}, {&quot;question&quot;: &quot;My product is listed as \\&quot;Under investigation\\&quot; or \\&quot;Affected\\&quot;, when will Red Hat release a fix for this vulnerability?&quot;, &quot;answer&quot;: &quot;&lt;ul&gt;&lt;li&gt;\\&quot;Under investigation\\&quot; doesn&#039;t necessarily mean that the product is affected by this vulnerability. It only means that our Analysis Team is still working on determining whether the product is affected and how it is affected.&lt;/li&gt;&lt;li&gt;\\&quot;Affected\\&quot; means that our Analysis Team has determined that this product is affected by this vulnerability and might release a fix to address this in the near future.&lt;/li&gt;&lt;/ul&gt;&quot;}, {&quot;question&quot;: &quot;What can I do if my product is listed as \\&quot;Will not fix\\&quot;?&quot;, &quot;answer&quot;: &quot;This depends mostly on the &lt;a href=\\&quot;https://access.redhat.com/security/updates/classification/\\&quot;&gt;Impact&lt;/a&gt; of the vulnerability and the &lt;a href=\\&quot;https://access.redhat.com/product-life-cycles/update_policies\\&quot;&gt;Life Cycle&lt;/a&gt; phase in which your product is currently in. Overall, you have the following options:&lt;ul&gt;&lt;li&gt;Upgrade to a supported product version that includes a fix for this vulnerability (recommended)&lt;/li&gt;&lt;li&gt;Apply a mitigation (if one exists)&lt;/li&gt;&lt;li&gt;Open a &lt;a href=\\&quot;https://access.redhat.com/support/cases/#/new\\&quot;&gt;support case&lt;/a&gt; to request a prioritization of releasing a fix for this vulnerability&lt;/li&gt;&lt;/ul&gt;&quot;}, {&quot;question&quot;: &quot;I have a Red Hat product but it is not in the above list, is it affected?&quot;, &quot;answer&quot;: &quot;The listed products were found to include one or more of the components that this vulnerability affects. These products underwent a thorough evaluation to determine their affectedness by this vulnerability. Note that layered products (such as container-based offerings) that consume affected components from any of the products listed in this table may be affected and are not represented.&quot;}, {&quot;question&quot;: &quot;Why is my security scanner reporting my product as vulnerable to this vulnerability even though my product version is fixed or not affected?&quot;, &quot;answer&quot;: &quot;In order to maintain code stability and compatibility, Red Hat usually does not rebase packages to entirely new versions. Instead, we &lt;a href=\\&quot;https://access.redhat.com/security/updates/backporting\\&quot;&gt;backport&lt;/a&gt; fixes and new features to an older version of the package we distribute. This can result in some security scanners that only consider the package version to report the package as vulnerable. To avoid this, we suggest that you use an OVAL-compatible security scanner like OpenSCAP.&lt;br&gt;&lt;br&gt;For more information, see &lt;a href=\\&quot;https://www.redhat.com/en/blog/determining-your-risk\\&quot;&gt;https://www.redhat.com/en/blog/determining-your-risk&lt;/a&gt;.&quot;}]",
+        "object": [
+          {
+            "question": "Why is Red Hat's CVSS v3 score or Impact different from other vendors?",
+            "answer": "For open source software shipped by multiple vendors, the CVSS base scores may vary for each vendor's version depending on the version they ship, how they ship it, the platform, and even how the software is compiled. This makes scoring of vulnerabilities difficult for third-party vulnerability databases such as NVD that only provide a single CVSS base score for each vulnerability. Red Hat scores reflect how a vulnerability affects our products specifically.<br><br>For more information, see <a href=\"https://access.redhat.com/solutions/762393\">https://access.redhat.com/solutions/762393</a>."
+          },
+          {
+            "question": "My product is listed as \"Under investigation\" or \"Affected\", when will Red Hat release a fix for this vulnerability?",
+            "answer": "<ul><li>\"Under investigation\" doesn't necessarily mean that the product is affected by this vulnerability. It only means that our Analysis Team is still working on determining whether the product is affected and how it is affected.</li><li>\"Affected\" means that our Analysis Team has determined that this product is affected by this vulnerability and might release a fix to address this in the near future.</li></ul>"
+          },
+          {
+            "question": "What can I do if my product is listed as \"Will not fix\"?",
+            "answer": "This depends mostly on the <a href=\"https://access.redhat.com/security/updates/classification/\">Impact</a> of the vulnerability and the <a href=\"https://access.redhat.com/product-life-cycles/update_policies\">Life Cycle</a> phase in which your product is currently in. Overall, you have the following options:<ul><li>Upgrade to a supported product version that includes a fix for this vulnerability (recommended)</li><li>Apply a mitigation (if one exists)</li><li>Open a <a href=\"https://access.redhat.com/support/cases/#/new\">support case</a> to request a prioritization of releasing a fix for this vulnerability</li></ul>"
+          },
+          {
+            "question": "I have a Red Hat product but it is not in the above list, is it affected?",
+            "answer": "The listed products were found to include one or more of the components that this vulnerability affects. These products underwent a thorough evaluation to determine their affectedness by this vulnerability. Note that layered products (such as container-based offerings) that consume affected components from any of the products listed in this table may be affected and are not represented."
+          },
+          {
+            "question": "Why is my security scanner reporting my product as vulnerable to this vulnerability even though my product version is fixed or not affected?",
+            "answer": "In order to maintain code stability and compatibility, Red Hat usually does not rebase packages to entirely new versions. Instead, we <a href=\"https://access.redhat.com/security/updates/backporting\">backport</a> fixes and new features to an older version of the package we distribute. This can result in some security scanners that only consider the package version to report the package as vulnerable. To avoid this, we suggest that you use an OVAL-compatible security scanner like OpenSCAP.<br><br>For more information, see <a href=\"https://www.redhat.com/en/blog/determining-your-risk\">https://www.redhat.com/en/blog/determining-your-risk</a>."
+          }
+        ]
+      }
+    ]
+  },
+  "field_cve_rh_cvss2_vector": [],
+  "field_cve_rh_vector2_txt": [],
+  "field_cve_cwe_description_txt": [],
+  "field_cve_rh_cvss3_score": [],
+  "field_cve_rh_cvss2_score": [],
+  "field_cve_bugzilla_url": {
+    "und": [
+      {
+        "value": "https://bugzilla.redhat.com/show_bug.cgi?id=2118714",
+        "format": null,
+        "safe_value": "https://bugzilla.redhat.com/show_bug.cgi?id=2118714"
+      }
+    ]
+  },
+  "field_cve_cvss2_nvd_vector": [],
+  "field_cve_cvss3_nvd_vector": {
+    "und": [
+      {
+        "value": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "format": null,
+        "safe_value": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+      }
+    ]
+  },
+  "field_cve_cvss2_nvd_score": [],
+  "field_cve_cvss3_nvd_score": {
+    "und": [
+      {
+        "value": "7.8",
+        "format": null,
+        "safe_value": "7.8"
+      }
+    ]
+  },
+  "metatags": {
+    "en": {
+      "robots": {
+        "value": {
+          "index": 0,
+          "follow": 0,
+          "noindex": 0,
+          "nofollow": 0,
+          "noarchive": 0,
+          "nosnippet": 0,
+          "noodp": 0,
+          "noydir": 0,
+          "noimageindex": 0,
+          "notranslate": 0
+        }
+      }
+    }
+  },
+  "microdata": {
+    "#attributes": {
+      "itemscope": "",
+      "itemid": "https://access.redhat.com/security/cve/cve-2022-31676"
+    },
+    "title": {
+      "#attributes": []
+    },
+    "field_cve_cvss3_temporal_vector": {
+      "#attributes": []
+    },
+    "field_cve_releases_txt": {
+      "#attributes": []
+    },
+    "field_cve_change_log_txt": {
+      "#attributes": []
+    },
+    "field_cve_rh_vector_txt": {
+      "#attributes": []
+    },
+    "field_cve_rh_cvss3_vector": {
+      "#attributes": []
+    },
+    "field_cve_vulnerability_url": {
+      "#attributes": []
+    },
+    "field_cve_lifecycle_url": {
+      "#attributes": []
+    },
+    "field_cve_faq_txt": {
+      "#attributes": []
+    },
+    "field_cve_rh_cvss2_vector": {
+      "#attributes": []
+    },
+    "field_cve_rh_vector2_txt": {
+      "#attributes": []
+    },
+    "field_cve_cwe_description_txt": {
+      "#attributes": []
+    },
+    "field_cve_rh_cvss3_score": {
+      "#attributes": []
+    },
+    "field_cve_rh_cvss2_score": {
+      "#attributes": []
+    },
+    "field_cve_bugzilla_url": {
+      "#attributes": []
+    },
+    "field_cve_cvss2_nvd_vector": {
+      "#attributes": []
+    },
+    "field_cve_cvss3_nvd_vector": {
+      "#attributes": []
+    },
+    "field_cve_cvss2_nvd_score": {
+      "#attributes": []
+    },
+    "field_cve_cvss3_nvd_score": {
+      "#attributes": []
+    },
+    "field_access_state": {
+      "#attributes": []
+    },
+    "field_cve_acknowledgement_text": {
+      "#attributes": []
+    },
+    "field_cve_bugzilla_id_int": {
+      "#attributes": []
+    },
+    "field_cve_bugzilla_text": {
+      "#attributes": []
+    },
+    "field_cve_cvss_base_score": {
+      "#attributes": []
+    },
+    "field_cve_cvss_scoring_vector": {
+      "#attributes": []
+    },
+    "field_cve_cvss_status_text": {
+      "#attributes": []
+    },
+    "field_cve_details_source_text": {
+      "#attributes": []
+    },
+    "field_cve_details_text": {
+      "#attributes": []
+    },
+    "field_cve_iava_text": {
+      "#attributes": []
+    },
+    "field_cve_public_date": {
+      "#attributes": []
+    },
+    "field_cve_references_text": {
+      "#attributes": [],
+      "value": {
+        "#attributes": []
+      }
+    },
+    "field_cve_statement_text": {
+      "#attributes": [],
+      "value": {
+        "#attributes": []
+      }
+    },
+    "field_cve_threat_severity_text": {
+      "#attributes": []
+    },
+    "field_cve_mitigation_text": {
+      "#attributes": [],
+      "value": {
+        "#attributes": []
+      }
+    },
+    "field_cve_security_errata_text": {
+      "#attributes": []
+    },
+    "field_cve_cwe_text": {
+      "#attributes": []
+    },
+    "field_affected_state_package_txt": {
+      "#attributes": []
+    },
+    "field_cve_cvss3_base_metrics": {
+      "#attributes": []
+    },
+    "field_cve_cvss3_status": {
+      "#attributes": []
+    },
+    "field_cve_cvss3_base_score": {
+      "#attributes": []
+    },
+    "field_cve_cvss3_temporal_score": {
+      "#attributes": []
+    },
+    "field_cve_exploit_known": {
+      "#attributes": []
+    },
+    "field_cve_csaw_bool": {
+      "#attributes": []
+    }
+  },
+  "rdf_mapping": {
+    "rdftype": [
+      "sioc:Item",
+      "foaf:Document"
+    ],
+    "title": {
+      "predicates": [
+        "dc:title"
+      ]
+    },
+    "created": {
+      "predicates": [
+        "dc:date",
+        "dc:created"
+      ],
+      "datatype": "xsd:dateTime",
+      "callback": "date_iso8601"
+    },
+    "changed": {
+      "predicates": [
+        "dc:modified"
+      ],
+      "datatype": "xsd:dateTime",
+      "callback": "date_iso8601"
+    },
+    "body": {
+      "predicates": [
+        "content:encoded"
+      ]
+    },
+    "uid": {
+      "predicates": [
+        "sioc:has_creator"
+      ],
+      "type": "rel"
+    },
+    "name": {
+      "predicates": [
+        "foaf:name"
+      ]
+    },
+    "comment_count": {
+      "predicates": [
+        "sioc:num_replies"
+      ],
+      "datatype": "xsd:integer"
+    },
+    "last_activity": {
+      "predicates": [
+        "sioc:last_activity_date"
+      ],
+      "datatype": "xsd:dateTime",
+      "callback": "date_iso8601"
+    }
+  },
+  "translations": {
+    "original": null,
+    "data": []
+  },
+  "cid": "0",
+  "last_comment_timestamp": "1661330433",
+  "last_comment_name": null,
+  "last_comment_uid": "11880703",
+  "comment_count": "0",
+  "name": "prodsec-dev",
+  "picture": "0",
+  "data": "b:0;",
+  "subscriptions_notify": true,
+  "path": "https://access.redhat.com/security/cve/cve-2022-31676",
+  "uid_name": "prodsec-dev",
+  "revision_uid_name": "service-account-sdengine",
+  "access_state": "active",
+  "rh_cvss3_vector": {
+    "Attack Vector": "Local",
+    "Attack Complexity": "High",
+    "Privileges Required": "Low",
+    "User Interaction": "None",
+    "Scope": "Unchanged",
+    "Confidentiality": "High",
+    "Integrity Impact": "High",
+    "Availability Impact": "High"
+  },
+  "rh_cvss2_vector": [],
+  "nvd_cvss2_vector": [],
+  "nvd_cvss3_vector": {
+    "Attack Vector": "Local",
+    "Attack Complexity": "Low",
+    "Privileges Required": "Low",
+    "User Interaction": "None",
+    "Scope": "Unchanged",
+    "Confidentiality": "High",
+    "Integrity Impact": "High",
+    "Availability Impact": "High"
+  },
+  "cwe_parsed": "<a href='http://cwe.mitre.org/data/definitions/250.html'>CWE-250</a>: Execution with Unnecessary Privileges"
+}

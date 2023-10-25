@@ -1,0 +1,24 @@
+<table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Error Code</th>
+                <th>Product</th>
+                <th>State</th>
+            </tr>
+        </thead>
+    <tbody>
+        {% for error_code_dict in error_tables %}
+            {% for error_code, os_list in error_code_dict.items %}
+                {% for os in os_list %}
+                    <tr>
+                        {% if forloop.first %}
+                            <td style="border: 2px solid black;" rowspan="{{ os_list|length }}">{{ error_code }}</td>
+                        {% endif %}
+                        <td {% if forloop.first %}style="border-top: 2px solid black;"{% endif %}>{{ os.product }}</td>
+                        <td {% if forloop.first %}style="border-top: 2px solid black;"{% endif %}>{{ os.state }}</td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+    </tbody>
+</table>
